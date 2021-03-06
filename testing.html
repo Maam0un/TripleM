@@ -1,0 +1,62 @@
+<div class="col-md-6" >
+
+  <div class="row g-3" style="padding:2rem">
+<div class="col-md-6">
+<div class="modal-dialog" style=" display:block;  overflow-y: initial !important; width: 350px;">
+<div class="modal-content" style="border:none; color:white; background-color:#242526;">
+<div>
+<h5 class="modal-title" id="exampleModalLabel" style="font-size:30px; margin-left:2%"><strong>Watch Later</strong></h5>
+</div>
+<div class="modal-body " style="height: 80vh; overflow-y: auto; color:white; background-color:#242526;">
+<div class="row">
+
+
+<?php
+
+$sql = "SELECT * FROM WatchLater WHERE Username='$username' ORDER BY ID DESC";
+$rs_result = $db->query($sql);
+
+if (mysqli_num_rows($rs_result) > 0) {
+while($row = $rs_result->fetch_assoc()) {?>
+
+<div class="col-md-3" style="background-color:#3A3B3C; padding:3%; margin-top:2%"">
+<img src="Movie Posters/<?php echo$row['Poster'] ?>" alt="Snow" class="image">
+</div>
+<div class="col-md-9" style="background-color:#3A3B3C; padding:4%; margin-top:2%">
+<div class="row">
+
+<div class="col-md-3" style="color:#a7a7a7">
+<?php echo $row['MovieName'] ?> 
+</div>
+<div class="col-md-9" style="color:#a7a7a7">
+<?php echo $row['AddedDate'] ?> 
+</div>
+
+
+</div>
+</div>
+
+<?php		
+}
+} else {
+echo "0 Comments";
+}
+
+
+?>
+
+
+
+
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-md-6">
+</div>
+</div>
+  <hr>
+
+</div>

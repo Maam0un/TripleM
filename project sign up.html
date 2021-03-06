@@ -1,0 +1,116 @@
+<html>
+	<head>
+	<meta charset = "utf-8">
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="styles.css" />
+	<script src="java.js"></script>
+	<link rel="icon" href="Logo\Logopit_1587821924357.png" type="image/gif" sizes="16x16">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	</head>
+	
+	<body>
+		<header> 
+			<marquee width="80%" direction="right" height="100px" scrollamount="10">
+				Welcome to the official <span style="color:red">Triple M</span> website </marquee>
+		</header>
+		
+		<p>
+<ul class="ul">
+			<a href="project.html">
+			<img src = "Logo\Logopit_1587821924357.png" width = "80" height ="50"
+            alt = "Triple M Logo"> 
+			</a>
+  <li class="li"><a  class="a" href="project sign up.html">Register</a></li>
+	<li class="li"> <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></li>
+  <li class="li"><a  class="a" href="#contact">Contact</a></li>
+  <li class="li"><a class="a"  href="Help Center.html">Help Center</a></li>
+  <li class="li"><a  class="a" href="project.html">Home</a></li>
+  <li class="li"><a  class="a" class="active" href="browse.html">Browse Movies</a></li>
+  </ul>
+<div class="w3-container">
+  <div class="w3-light-grey w3-round-xlarge">
+    <div class="w3-container w3-red w3-round-xlarge" style="width:33.33%">Step 1/3</div>
+  </div>
+</div>			
+		</p>
+		<hr>
+		<section id="sign-up">  
+		<h2>Sign Up</h2>
+		<p>Welcome to our sample web page. We'll be dissecting this page piece
+		by piece to show you the best ways to use HTML, CSS and Javascript.
+		</p>
+			<form action="Sign Up Part 2.html">
+				<fieldset>
+				<legend>Create a Profile: Step 1/3</legend>
+					<p>
+						<label for="firstname">First Name<br> &nbsp;&nbsp;
+						<input class="input" type="text" name="firstname" id="firstname" required autofocus 
+						placeholder="First Name" >
+						</label>
+					</p>
+					<p>
+						<label for="lastname">Last Name <br>&ensp;&ensp;
+						<input class="input" type="text" name="lastname" id="lastname" required
+						placeholder="Last Name">
+						</label>
+					</p>
+					<p>
+						<label>E-mail Address: <br>&ensp;&ensp;
+						<input class="input" name = "email" type = "email"  size = "25" required 
+						placeholder="Email Address">
+						</label> 
+					</p> 
+					<p>
+						<label>Password: <br>&ensp;&ensp;
+						<input type="text" name="username" value="<?php echo $username; ?>"><br>
+						
+						</label>
+					</p>
+					<p>
+						<label>Confirm Password: <br>&ensp;&ensp;
+						<input placeholder="Password" class="input" type="password" id="myInput"><br>
+						
+						</label>
+					</p>
+					<p>
+									<a href="project.html">
+						<input class="input" type="submit" value="Create profile">
+						</a>
+					</p>
+					
+					
+				</fieldset>
+			</form>
+		</section>
+		<ul>
+			<section>
+				<div id="id01" class="modal">
+					<form class="modal-content animate" action="/action_page.php" method="post">
+						<div class="imgcontainer">
+							<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+							<img src="Logo\Logopit_1587821924357.png" alt="Avatar" class="avatar">
+						</div>
+						<div class="container">
+							<label for="uname"><b>Username</b></label>
+							<input  class="in" type="text" placeholder="Enter Username" name="uname" required>
+							<label for="psw"><b>Password</b></label>
+							<input class="in" type="password" placeholder="Enter Password" name="psw" required>  
+							<button type="submit">Login</button>
+							<label>
+								<input class="in" type="checkbox" checked="checked" name="remember"> Remember me
+							</label>
+						</div>
+						<div class="container" style="background-color:#f1f1f1">
+							<span class="psw">Forgot <a href="#">password?</a></span>
+						</div>
+					</form>
+				</div>
+			</section>
+			<p>
+				<img src = "Logo\Logopit_1587821924357.png" width = "200" height ="200"
+				alt = "Triple M Logo">
+				<a>Copyright &copy Triple M</a>
+			</p> 
+		</ul>	
+	</body>
+</html>

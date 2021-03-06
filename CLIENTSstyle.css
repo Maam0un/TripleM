@@ -1,0 +1,417 @@
+html {
+  font-size: 62.5%;
+}
+
+body  { 
+  font-family: Arial, Helvetica, sans-serif;
+background-image: url(back2.jpeg);
+  background-position: bottom right;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-color: LightGrey; 
+word-spacing: 5px;
+background-attachment: fixed; 
+background-size: 100% 100%;
+
+}
+
+a.nodec  { 
+  text-decoration: none;
+  color:red; }
+  
+  a{text-decoration: none;}
+
+  .ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+    }
+    
+    .li {
+    float: right;
+    }
+    
+    .li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    }
+    
+    .li a:hover {
+    background-image: linear-gradient(#333, #ff0000);
+    }
+    
+    .active {
+    background-image: linear-gradient(#ff0000, #333);
+    }
+
+
+    .fa {
+      padding: 20px;
+      font-size: 30px;
+      width: 60px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+      }
+      
+      .fa:hover {
+      opacity: 0.7;
+      }
+      
+      .fa-facebook {
+      background: #3B5998;
+      color: white;
+      }
+      
+      .fa-twitter {
+      background: #55ACEE;
+      color: white;
+      }
+      
+      .fa-google {
+      background: #dd4b39;
+      color: white;
+      }
+      
+
+main {
+  background-color: #2C3845;
+}
+
+
+table {
+  display: block;
+}
+
+tr, td, tbody, tfoot {
+  display: block;
+}
+
+thead {
+  display: none;
+}
+
+tr {
+  padding-bottom: 10px;
+}
+
+td {
+  padding: 10px 10px 0;
+  text-align: center;
+}
+td:before {
+  content: attr(data-title);
+  color: #7a91aa;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  padding-right: 10px;
+  display: block;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: 700;
+}
+
+thead th {
+  background-color: #202932;
+  color: #fff;
+  border: 1px solid #202932;
+}
+
+tfoot th {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: #b8c4d2;
+}
+
+.button {
+  line-height: 1;
+  display: inline-block;
+  font-size: 1.3rem;
+  text-decoration: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 8px;
+  background-color: #4b908f;
+}
+
+.button:hover {
+
+  background-image: linear-gradient(#333, #c0c0c0);
+  }
+
+.buttonT {
+    line-height: 1;
+    display: inline-block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px;
+    background-color: #4b908f;
+    opacity: 0;
+}
+
+  tr:hover .buttonT { 
+    line-height: 1;
+    display: inline-block;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 8px;
+    background-color: green;
+    opacity: 1;
+   }
+
+
+@media (min-width: 460px) {
+  td {
+    text-align: left;
+  }
+  td:before {
+    display: inline-block;
+    text-align: right;
+    width: 140px;
+  }
+
+  
+}
+@media (min-width: 720px) {
+  table {
+    display: table;
+  }
+
+  tr {
+    display: table-row;
+  }
+
+  td, th {
+    display: table-cell;
+  }
+
+  tbody {
+    display: table-row-group;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  td {
+    border: 1px solid #28333f;
+  }
+  td:before {
+    display: none;
+  }
+
+  td, th {
+    padding: 10px;
+  }
+
+  tr:nth-child(2n+2) td {
+    background-color: #242e39;
+  }
+
+  tfoot th {
+    display: table-cell;
+  }
+
+
+}
+
+.padding {
+  padding: 3rem !important
+}
+
+.user-card-full {
+  overflow: hidden
+}
+
+.card {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+  border: none;
+  margin-bottom: 30px
+}
+
+.m-r-0 {
+  margin-right: 0px
+}
+
+.m-l-0 {
+  margin-left: 0px
+}
+
+.user-card-full .user-profile {
+  border-radius: 5px 0 0 5px
+}
+
+.bg-c-lite-green {
+  background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));
+  background: linear-gradient(to right, #ee5a6f, #f29263)
+}
+
+.user-profile {
+  padding: 20px 0
+}
+
+.card-block {
+  padding: 1.25rem
+}
+
+.m-b-25 {
+  margin-bottom: 25px
+}
+
+.img-radius {
+  border-radius: 5px
+}
+
+h6 {
+  font-size: 14px
+}
+
+.card .card-block p {
+  line-height: 25px
+}
+
+@media only screen and (min-width: 1400px) {
+  p {
+      font-size: 14px
+  }
+}
+
+.card-block {
+  padding: 1.25rem
+}
+
+.b-b-default {
+  border-bottom: 1px solid #e0e0e0
+}
+
+.m-b-20 {
+  margin-bottom: 20px
+}
+
+.p-b-5 {
+  padding-bottom: 5px !important
+}
+
+.card .card-block p {
+  line-height: 25px
+}
+
+.m-b-10 {
+  margin-bottom: 10px
+}
+
+.text-muted {
+  color: #919aa3 !important
+}
+
+.b-b-default {
+  border-bottom: 1px solid #e0e0e0
+}
+
+.f-w-600 {
+  font-weight: 600
+}
+
+.m-b-20 {
+  margin-bottom: 20px
+}
+
+.m-t-40 {
+  margin-top: 20px
+}
+
+.p-b-5 {
+  padding-bottom: 5px !important
+}
+
+.m-b-10 {
+  margin-bottom: 10px
+}
+
+.m-t-40 {
+  margin-top: 20px
+}
+
+.user-card-full .social-link li {
+  display: inline-block
+}
+
+.user-card-full .social-link li a {
+  font-size: 20px;
+  margin: 0 10px 0 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out
+}
+  
+.pagination-outer{ text-align: center; }
+.pagination{
+    font-family: 'Itim', cursive;
+    border-radius: 10px 10px 0 0;
+    border-top: 10px solid #ff9f1a;
+    display: inline-flex;
+}
+.pagination li{
+    padding: 5px 0;
+    margin: 0 5px;
+}
+.pagination li a.page-link{
+    color: #fff;
+    background: transparent;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 30px;
+    height: 33px;
+    width: 43px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ff9f1a;
+    border-radius: 0;
+    display: block;
+    transition: all 0.3s ease 0s;
+}
+.pagination li.active a.page-link,
+.pagination li a.page-link:hover,
+.pagination li.active a.page-link:hover,
+.pagination li a.page-link:focus{
+    color: #fff;
+    background: #ff9f1a;
+    line-height: 38px;
+    height: 41px;
+    margin: -5px 0 -3px;
+    border: 1px solid #ff9f1a;
+}
+@media only screen and (max-width: 480px){
+    .pagination{
+        font-size: 0;
+        display: block;
+    }
+    .pagination li{ display: inline-block; }
+}
